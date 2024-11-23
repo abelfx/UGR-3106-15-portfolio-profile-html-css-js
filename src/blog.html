@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Blogs | Abel</title>
+
+    <!--Links for icons and fonts used-->
+    <link rel="icon" href="images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <!-- navigation part-->
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+          <!-- Logo -->
+          <a class="logo" href="index.html">
+            <img src="images/Logo.png" alt="Portfolio site logo">
+          </a>
+
+          <!-- Main Menu -->
+          <ul class="main-menu" id="mobile-menu" role="menu">
+            <li class="nav-link active">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav-link">
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="nav-link">
+              <a class="btn" href="aboutme.html">
+                <i class="fas fa-user"></i> About Me
+              </a>
+            </li>
+          </ul>
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger-button"
+            class="hamburger-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open mobile menu"
+            hidden
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <div class="menu">
+          <h1 class="blog-title">MY BLOGS</h1>
+
+          <div class="search-bar">
+            <input type="text" placeholder="Search Blog" id="searchBar">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <a href="#" class="new-post">New Post</a>
+        </div>
+
+        <h2 class="sub-title">Here are some of my favourite Videos</h2>
+        <div class="row">
+          <article class="blog java">
+            <h3>8 Design Patterns Every Developer Should Know</h3>
+            <div class="second-line">
+              <span>#general-programming</span>
+              <span id="blog1">#java</span>
+            </div>
+
+            <p class="third-line">Oct 14 . 9m watch time</p>
+            <div class="video-container">
+              <video src="videos/Blog1.mp4" controls width="350" aria-label="8 Design Patterns Every Developer Should Know"></video>
+            </div>
+
+            <div class="bottom-line">
+              <button class="up-vote">
+                <i class="fas fa-thumbs-up"></i>
+                15
+              </button>
+
+              <button class="down-vote">
+                <i class="fas fa-thumbs-down"></i>
+                2
+              </button>
+
+              <button class="comments">
+                <i class="fas fa-comment"></i>
+                12
+              </button>
+
+              <i class="fas fa-bookmark"></i>
+
+              <i class="fas fa-copy"></i>
+            </div>
+          </article>
+
+          <article class="blog javaScript">
+            <h3>2 Dimensional(2D) Arrays in JavaScript</h3>
+            <div class="second-line">
+              <span id="blog2">#JavaScript</span>
+              <span>#web dev</span>
+              <span>+1</span>
+            </div>
+
+            <p class="third-line">Today. 7m watch time</p>
+            <div class="video-container">
+              <video src="videos/Blog2.mp4" controls width="350" aria-label="2d Arrays in JavaScript"></video>
+            </div>
+
+            <div class="bottom-line">
+              <button class="up-vote">
+                <i class="fas fa-thumbs-up"></i>
+                5
+              </button>
+
+              <button class="down-vote">
+                <i class="fas fa-thumbs-down"></i>
+                0
+              </button>
+
+              <button class="comments">
+                <i class="fas fa-comment"></i>
+                2
+              </button>
+
+              <i class="fas fa-bookmark"></i>
+
+              <i class="fas fa-copy"></i>
+            </div>
+          </article>
+
+          <article class="blog java">
+            <h3>How to Study Programming the lazy way</h3>
+            <div class="second-line">
+              <span id="blog3">#AI</span>
+              <span>#Productivity</span>
+              <span>Notion</span>
+            </div>
+
+           <p class="third-line">Oct 27. 11 watch time</p>
+            <div class="video-container">
+              <video src="videos/Blog3.mp4" controls width="350" aria-label="How to Study programming the lazy way"></video>
+            </div>
+
+            <div class="bottom-line">
+              <button class="up-vote">
+                <i class="fas fa-thumbs-up"></i>
+                26
+              </button>
+
+              <button class="down-vote">
+                <i class="fas fa-thumbs-down"></i>
+                8
+              </button>
+
+              <button class="comments">
+                <i class="fas fa-comment"></i>
+                2
+              </button>
+
+              <i class="fas fa-bookmark"></i>
+
+              <i class="fas fa-copy"></i>
+            </div>
+          </article>
+        </div>
+
+        <div class="row">
+          <article class="blog java">
+            <h3>Nesting If Statements is Bad</h3>
+            <div class="second-line">
+              <span id="blog4">#Java</span>
+              <span>#MVC</span>
+              <span>#Design pattern</span>
+            </div>
+
+            <p class="third-line">Oct 20 . 7m watch time</p>
+            <div class="video-container">
+              <video src="videos/Blog4.mp4" controls width="350" aria-label="Stop using if Statements in java"></video>
+            </div>
+
+            <div class="bottom-line">
+              <button class="up-vote">
+                <i class="fas fa-thumbs-up"></i>
+                15
+              </button>
+
+              <button class="down-vote">
+                <i class="fas fa-thumbs-down"></i>
+                2
+              </button>
+
+              <button class="comments">
+                <i class="fas fa-comment"></i>
+                12
+              </button>
+
+              <i class="fas fa-bookmark"></i>
+
+              <i class="fas fa-copy"></i>
+            </div>
+          </article>
+
+          <article class="blog javaScript">
+            <h3>
+              Session vs Token Authentication in 100 Seconds
+            </h3>
+            <div class="second-line">
+              <span>#BackEnd</span>
+              <span id="blog5">#javaScript</span>
+              <span>#Node.js</span>
+              <span>+1</span>
+            </div>
+
+            <p class="third-line">Oct 14 . 9m watch time</p>
+            <div class="video-container">
+              <video src="videos/Blog5.mp4" controls width="350" class="Implementing SS and CS using Node.js"></video>
+            </div>
+
+            <div class="bottom-line">
+              <button class="up-vote">
+                <i class="fas fa-thumbs-up"></i>
+                150
+              </button>
+
+              <button class="down-vote">
+                <i class="fas fa-thumbs-down"></i>
+                20
+              </button>
+
+              <button class="comments">
+                <i class="fas fa-comment"></i>
+                37
+              </button>
+
+              <i class="fas fa-bookmark"></i>
+
+              <i class="fas fa-copy"></i>
+            </div>
+          </article>
+
+          <article class="blog javaScript">
+            <h3>JavaScript best practices</h3>
+            <div class="second-line">
+              <span id="blog6">#Web Dev</span>
+              <span>#Mobile Dev</span>
+              <span>+1</span>
+            </div>
+
+            <p class="third-line">Oct 14 . 9m watch time</p>
+            <div class="video-container">
+              <video src="videos/Blog6.mp4" controls width="350" aria-label="JavaScript best practices"></video>
+            </div>
+
+            <div class="bottom-line">
+              <button class="up-vote">
+                <i class="fas fa-thumbs-up"></i>
+                15
+              </button>
+
+              <button class="down-vote">
+                <i class="fas fa-thumbs-down"></i>
+                2
+              </button>
+
+              <button class="comments">
+                <i class="fas fa-comment"></i>
+                12
+              </button>
+
+              <i class="fas fa-bookmark"></i>
+
+              <i class="fas fa-copy"></i>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-grid">
+        <div class="main container">
+          <div class="grid">
+            <img src="images/Logo.png" alt="Portfolio Logo">
+            <p>Crafting Your Digital Presence with Precision</p>
+            <div class="icons">
+              <a href="https://t.me/AbEl_FX" aria-label="telegram" target="_blank"
+                ><i class="fab fa-telegram"></i
+              ></a>
+              <a href="https://github.com/abelfx" aria-label="github" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://x.com/ET_AbElA" aria-label="twitter" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abel-tesfa-9b1617249/"
+                aria-label="Linkedin" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="grid2">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contactMe.html">Contact Me</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="grid2">
+            <h3>Contact Me</h3>
+            <p>Online hours</p>
+            <p>Monday-Friday</p>
+            <p>5:00AM-8:00PM local</p>
+            <p>Address</p>
+            <p>Mehandis Sefer Infront Of Saint Gebriel</p>
+          </div>
+        </div>
+        <div class="Owner">
+          <p>&copy;All rights Reserved by Abel Tesfa</p>
+          <p>
+            Contact:
+            <a href="mailto:abeltesfa198@gmail.com"> abeltesfa198@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

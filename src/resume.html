@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Abel</title>
+
+
+
+    <!--Links for icons and fonts used-->
+
+    <link rel="icon" href="images/logoo.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <!-- navigation part-->
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+          <!-- Logo -->
+          <a class="logo" href="index.html">
+            <img src="images/Logo.png" alt="Portfolio site logo">
+          </a>
+
+          <!-- Main Menu -->
+          <ul class="main-menu" id="mobile-menu" role="menu">
+            <li class="nav-link active">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav-link">
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="nav-link">
+              <a class="btn" href="aboutme.html">
+                <i class="fas fa-user"></i> About Me
+              </a>
+            </li>
+          </ul>
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger-button"
+            class="hamburger-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open mobile menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main part-->
+    <main id="resume" class="resume">
+
+      <h1>Abel Tesfa - Resume</h1>
+      <!-- Professional Summary -->
+      <section class="section" id="summary">
+        <header>
+          <h2>Professional Summary</h2>
+        </header>
+        <p>
+          software engineer Student specializing in both frontend and backend
+          development with Node.j. Skilled in building scalable applications and
+          currently studying Software Engineering at Addis Ababa University.
+        </p>
+      </section>
+
+      <!-- Skills and Technologies -->
+      <section class="section" id="skills">
+        <header>
+          <h2>Skills and Technologies</h2>
+        </header>
+
+        <ul>
+          <li>
+            <strong>Languages:</strong>JavaScript, HTML, CSS, Java, Python
+          </li>
+          <li><strong>Frameworks:</strong> Node.js, Express, React</li>
+          <li><strong>Databases:</strong> MongoDB, MySQL</li>
+          <li><strong>Tools:</strong> Git, VS Code, OBS Studio</li>
+        </ul>
+      </section>
+
+      <!-- Professional Experience -->
+      <section class="section" id="experience">
+        <header>
+          <h2>Experience</h2>
+        </header>
+
+        <article class="job">
+          <header>
+            <h3>Full-Stack Developer</h3>
+          </header>
+
+          <p class="date">July 2023 - Present</p>
+          <p>
+            Developed and maintained a full-stack chat application using MERN
+            stack, focusing on scalable architecture and real-time data
+            handling.
+          </p>
+        </article>
+
+        <article class="job">
+          <header>
+            <h3>Desktop Application Developer</h3>
+          </header>
+
+          <p class="date">April 2024 - Present</p>
+          <p>
+            Developed Desktop applications using Java and its frame works,
+            focusing on MVP design patterns making it scalable and secure
+          </p>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <article class="education-item">
+          <header>
+            <h3>Secondary And Preparatory Education</h3>
+          </header>
+          <p>Omega School</p>
+        </article>
+        <article class="education-item">
+          <header>
+            <h3>B.Sc. in Software Engineering</h3>
+          </header>
+          <p>Addis Ababa University, Expected 2027</p>
+        </article>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <header>
+          <h2>Projects</h2>
+        </header>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Technologies</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full-Stack Chat Application</td>
+              <td>MongoDB, Express, React, Node.js</td>
+              <td>
+                Built a chat app with real-time messaging, user authentication,
+                and responsive design.
+              </td>
+            </tr>
+            <tr>
+              <td>E-learning Platform</td>
+              <td>HTML5, CSS, Vanilla JS, Node.js, Express, MongoDB</td>
+              <td>Designed an E-learning platform for my personal project.</td>
+            </tr>
+            <tr>
+              <td>E-Commerce Platform</td>
+              <td>HTML5, CSS</td>
+              <td>
+                Designed an E-commerce platform for a burger house as a personal
+                project.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Achievements and Certifications -->
+      <section class="section" id="achievements">
+        <header>
+          <h2>Achievements and Certifications</h2>
+        </header>
+
+        <ul>
+          <li>Certification on Front End programming fundamentals</li>
+          <li>Certification on Back End using Node.js</li>
+        </ul>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-grid">
+        <div class="main container">
+          <div class="grid">
+            <img src="images/Logo.png" alt="Portfolio Logo">
+            <p>Crafting Your Digital Presence with Precision</p>
+            <div class="icons">
+              <a
+                href="https://t.me/AbEl_FX"
+                aria-label="telegram"
+                target="_blank"
+                ><i class="fab fa-telegram"></i
+              ></a>
+              <a
+                href="https://github.com/abelfx"
+                aria-label="github"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://x.com/ET_AbElA"
+                aria-label="twitter"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abel-tesfa-9b1617249/"
+                aria-label="Linkedin"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="grid2">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contactMe.html">Contact Me</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="grid2">
+            <h3>Contact Me</h3>
+            <p>Online hours</p>
+            <p>Monday-Friday</p>
+            <p>5:00AM-8:00PM local</p>
+            <p>Address</p>
+            <p>Mehandis Sefer Infront Of Saint Gebriel</p>
+          </div>
+        </div>
+        <div class="Owner">
+          <p>&copy;All rights Reserved by Abel Tesfa</p>
+          <p>
+            Contact:
+            <a href="mailto:abeltesfa198@gmail.com"> abeltesfa198@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

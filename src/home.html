@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Abel</title>
+
+   
+    <!--Links for icons and fonts used-->
+    <link rel="icon" href="images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <!-- navigation section-->
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="container">
+          <!-- Logo -->
+          <a class="logo" href="index.html">
+            <img src="images/Logo.png" alt="Portfolio site logo">
+          </a>
+
+          <!-- Main Menu -->
+          <ul class="main-menu" id="mobile-menu" role="menu">
+            <li class="nav-link active">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="resume.html">Resume</a>
+            </li>
+            <li class="nav-link">
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="nav-link">
+              <a class="btn" href="aboutme.html">
+                <i class="fas fa-user"></i> About Me
+              </a>
+            </li>
+          </ul>
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger-button"
+            class="hamburger-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open mobile menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Introduction section-->
+      <section class="intro container">
+        <div class="overlay"></div>
+        <div class="flex">
+          <header class="note">
+            <h1>
+              Hi,
+              <span class="violet">I'm Abel Tesfa</span>
+            </h1>
+            <h2>Web and Mobile Developer</h2>
+            <h3>Creates and Maintains Apps and Websites</h3>
+
+            <div class="btn">
+              <a href="contactMe.html" class="contact">Contact me</a>
+              <a href="aboutme.html" class="about">About me</a>
+            </div>
+          </header>
+
+          <figure class="mypic container">
+            <img src="images/ProfilePic.png" alt="my profile picture">
+          </figure>
+        </div>
+      </section>
+
+      <!--Projects section-->
+      <section class="projects">
+        <h2 class="head">Real World Projects</h2>
+
+        <div class="grid">
+          <h3 id="heading1" class="active">WebSite</h3>
+
+          <h3 id="heading2">Application</h3>
+        </div>
+
+        <!--Websites article-->
+        <div class="images" id="images1" data-aos="fade-left">
+          <article class="site container">
+            <h3>WebSites I developed</h3>
+            <figure>
+              <a href="https://abelsass.netlify.app/"
+                ><img src="images/saas.jpg" alt="SAAS WebSite">
+              </a>
+              <figcaption>SAAS WebSite</figcaption>
+            </figure>
+
+            <figure>
+              <a href="https://burgerhouse00.netlify.app/"
+                ><img src="images/restaurant.jpg" alt="Restaurant WebSite">
+              </a>
+              <figcaption>Restaurant Website</figcaption>
+            </figure>
+
+            <figure>
+              <a href="https://ethio-apex.netlify.app/"
+                ><img src="images/elearning.jpg" alt="E-learning platform">
+              </a>
+              <figcaption>E-learning Platform</figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <!--applications article-->
+        <div class="images" id="images2">
+          <article class="site container">
+            <h3>Desktop Applications I developed</h3>
+            <figure>
+              <a href="#"
+                ><img src="images/chatApp.jpg" alt="Chat Appliation">
+              </a>
+              <figcaption>Chat App</figcaption>
+            </figure>
+
+            <figure>
+              <a href="#"
+                ><img
+                  src="images/onlineShop.jpg"
+                  alt="Online Shopping system">
+                ></a
+              >
+              <figcaption>Online Shooping System</figcaption>
+            </figure>
+
+            <figure>
+              <a href="#">
+                <img
+                  src="images/incomeStatement.jpg"
+                  alt="Income Statement Calculator">
+                </a>
+              <figcaption>Income Statement Calculator</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <!--Tools Section-->
+      <section class="tools" data-aos="fade-up">
+        <h2 class="head">Tools I use</h2>
+        <div class="icons">
+          <div class="grid">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt="HTML Logo"
+              width="50">
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS Logo"
+              width="50">
+
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt="JavaScript Logo"
+              width="50">
+          </div>
+
+          <div class="grid">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              alt="React Logo"
+              width="50">
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+              alt="Node.js Logo"
+              width="50">
+
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt="Java Logo"
+              width="50">
+          </div>
+          <div class="grid">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+              alt="Python Logo"
+              width="50">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              alt="Express.js Logo"
+              width="50">
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind CSS Logo"
+              width="50">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-grid">
+        <div class="main container">
+          <div class="grid">
+            <img src="images/Logo.png" alt="Portfolio Logo">
+            <p>Crafting Your Digital Presence with Precision</p>
+            <div class="icons">
+              <a
+                href="https://t.me/AbEl_FX"
+                aria-label="telegram"
+                target="_blank"
+                ><i class="fab fa-telegram"></i
+              ></a>
+              <a
+                href="https://github.com/abelfx"
+                aria-label="github"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://x.com/ET_AbElA"
+                aria-label="twitter"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abel-tesfa-9b1617249/"
+                aria-label="Linkedin"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="grid2">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="aboutme.html">About Me</a></li>
+              <li><a href="contactMe.html">Contact Me</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="grid2">
+            <h3>Contact Me</h3>
+            <p>Online hours</p>
+            <p>Monday-Friday</p>
+            <p>5:00AM-8:00PM local</p>
+            <p>Address</p>
+            <p>Mehandis Sefer Infront Of Saint Gebriel</p>
+          </div>
+        </div>
+        <div class="Owner">
+          <p>&copy;All rights Reserved by Abel Tesfa</p>
+          <p>
+            Contact:
+            <a href="mailto:abeltesfa198@gmail.com"> abeltesfa198@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
