@@ -1,0 +1,84 @@
+/* form */
+main {
+  display: flex;
+  justify-content: center;
+}
+.form-section {
+  margin-top: 200px;
+  border: 1px solid rgb(206, 201, 248);
+  width: 500px;
+  border-radius: 40px;
+}
+.form-section header {
+  padding-top: 40px;
+  text-align: center;
+  color: rgb(206, 201, 248);
+  font-size: 1.8em;
+}
+.form {
+  max-width: 600px;
+  margin: 20px auto;
+  margin-top: 0px;
+  font-size: 1.5em;
+  display: block;
+  padding: 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.form h2 {
+  color: rgb(206, 201, 248);
+  margin-bottom: 30px;
+}
+
+.form label {
+  color: rgb(206, 201, 248);
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.form input,
+.form #message {
+  margin-top: 10px;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 1.1em;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.form input,
+.form textarea {
+  border: 1px groove rgb(206, 201, 248);
+  color: rgb(206, 201, 248);
+}
+
+fieldset {
+  border: none;
+}
+
+.form #message {
+  height: 150px;
+}
+.form .button {
+  color: rgb(206, 201, 248);
+  background-color: rgb(109, 41, 226);
+  margin-top: 10px;
+  padding: 20px 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+  border-radius: 15px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.form .button:hover {
+  background-color: rgb(95, 34, 200);
+  cursor: pointer;
+}
+
+.right {
+  color: white;
+}

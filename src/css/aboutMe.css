@@ -1,0 +1,138 @@
+/* General styling for the main container */
+main {
+  font-family: "Arial", sans-serif;
+  color: rgb(206, 201, 248);
+  padding: 50px 15px;
+  padding-top: 180px;
+  text-align: center;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  color: rgb(231, 229, 253);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Skills/Interests Section Styling */
+.skills {
+  margin: 40px 0;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(231, 229, 253);
+}
+
+.skills p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Inquiry Section Styling */
+.inquiry {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.inquiry h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(231, 229, 253);
+}
+
+.inquiry p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Audio Section Styling */
+.audio-section {
+  margin: 20px auto;
+}
+
+audio {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Contact Button Styling */
+.contact-btn {
+  display: inline-block;
+  background-color: rgb(109, 41, 226);
+  color: rgb(231, 229, 253);
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #6a45cc;
+}
+
+@media (max-width: 768px) {
+  main p {
+    font-size: 0.8em;
+  }
+  .navbar .main-menu {
+    margin-top: 100px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgb(35, 39, 73);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease-in-out;
+  }
+
+  .navbar .main-menu li {
+    padding-left: 30px;
+  }
+
+  /* Hamburger button visible */
+  .navbar .hamburger-button {
+    display: block;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .navbar .main-menu.active {
+    display: flex;
+    transform: translateX(0);
+  }
+}

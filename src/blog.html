@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs | Abel</title>
 
     <!--Links for icons and fonts used-->
-    <link rel="icon" href="images/Logo.png">
+    <link rel="icon" href="images/Logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog.css" />
   </head>
   <body>
     <!-- navigation part-->
@@ -20,20 +23,20 @@
       <nav class="navbar" aria-label="Main Navigation">
         <div class="container">
           <!-- Logo -->
-          <a class="logo" href="home.html">
-            <img src="images/Logo.png" alt="Portfolio site logo">
+          <a class="logo" href="aboutme.html">
+            <img src="images/Logo.png" alt="Portfolio site logo" />
           </a>
 
           <!-- Main Menu -->
-          <ul class="main-menu" id="mobile-menu" role="menu">
-            <li class="nav-link active">
-              <a href="home.html">Home</a>
+          <ul class="main-menu" id="mobile-menu">
+            <li class="nav-link">
+              <a href="index.html">Home</a>
             </li>
             <li class="nav-link">
               <a href="resume.html">Resume</a>
             </li>
             <li class="nav-link">
-              <a href="blog.html">Blog</a>
+              <a href="blog.html" class="active">Blog</a>
             </li>
             <li class="nav-link">
               <a class="btn" href="aboutme.html">
@@ -59,31 +62,44 @@
     </header>
 
     <main>
-
       <section class="hero">
         <div class="menu">
           <h1 class="blog-title">MY BLOGS</h1>
 
           <div class="search-bar">
-            <input type="text" placeholder="Search Blog" id="searchBar">
-            <i class="fas fa-search"></i>
+            <label for="searchBar" id="searchBar">Search Blog</label>
+            <input
+              type="text"
+              placeholder="..."
+              name="searchBar"
+              id="searchBar"
+            />
+            <i class="fas fa-search" id="searchIcon"></i>
           </div>
 
-          <a href="#" class="new-post">New Post</a>
+          <a href="#" class="new-post" id="new-post">New Post</a>
         </div>
 
         <h2 class="sub-title">Here are some of my favourite Videos</h2>
         <div class="row">
           <article class="blog java">
-            <h3>8 Design Patterns Every Developer Should Know</h3>
-            <div class="second-line">
-              <span>#general-programming</span>
-              <span id="blog1">#java</span>
+            <div class="text-content">
+              <h3>8 Design Patterns Every Developer Should Know</h3>
+              <div class="second-line">
+                <span>#general-programming</span>
+                <span id="blog1">#java</span>
+              </div>
+
+              <p class="third-line">Oct 14 . 9m watch time</p>
             </div>
 
-            <p class="third-line">Oct 14 . 9m watch time</p>
             <div class="video-container">
-              <video src="videos/Blog1.mp4" controls width="350" aria-label="8 Design Patterns Every Developer Should Know"></video>
+              <video
+                src="videos/Blog1.mp4"
+                controls
+                width="350"
+                aria-label="8 Design Patterns Every Developer Should Know"
+              ></video>
             </div>
 
             <div class="bottom-line">
@@ -109,16 +125,24 @@
           </article>
 
           <article class="blog javaScript">
-            <h3>2 Dimensional(2D) Arrays in JavaScript</h3>
-            <div class="second-line">
-              <span id="blog2">#JavaScript</span>
-              <span>#web dev</span>
-              <span>+1</span>
+            <div class="text-content">
+              <h3>2 Dimensional(2D) Arrays in JavaScript</h3>
+              <div class="second-line">
+                <span id="blog2">#JavaScript</span>
+                <span>#web dev</span>
+                <span>+1</span>
+              </div>
+
+              <p class="third-line">Today. 7m watch time</p>
             </div>
 
-            <p class="third-line">Today. 7m watch time</p>
             <div class="video-container">
-              <video src="videos/Blog2.mp4" controls width="350" aria-label="2d Arrays in JavaScript"></video>
+              <video
+                src="videos/Blog2.mp4"
+                controls
+                width="350"
+                aria-label="2d Arrays in JavaScript"
+              ></video>
             </div>
 
             <div class="bottom-line">
@@ -144,16 +168,24 @@
           </article>
 
           <article class="blog java">
-            <h3>How to Study Programming the lazy way</h3>
-            <div class="second-line">
-              <span id="blog3">#AI</span>
-              <span>#Productivity</span>
-              <span>Notion</span>
+            <div class="text-content">
+              <h3>How to Study Programming the lazy way</h3>
+              <div class="second-line">
+                <span id="blog3">#AI</span>
+                <span>#Productivity</span>
+                <span>Notion</span>
+              </div>
+
+              <p class="third-line">Oct 27. 11 watch time</p>
             </div>
 
-           <p class="third-line">Oct 27. 11 watch time</p>
             <div class="video-container">
-              <video src="videos/Blog3.mp4" controls width="350" aria-label="How to Study programming the lazy way"></video>
+              <video
+                src="videos/Blog3.mp4"
+                controls
+                width="350"
+                aria-label="How to Study programming the lazy way"
+              ></video>
             </div>
 
             <div class="bottom-line">
@@ -181,16 +213,24 @@
 
         <div class="row">
           <article class="blog java">
-            <h3>Nesting If Statements is Bad</h3>
-            <div class="second-line">
-              <span id="blog4">#Java</span>
-              <span>#MVC</span>
-              <span>#Design pattern</span>
+            <div class="text-content">
+              <h3>Nesting If Statements is Bad</h3>
+              <div class="second-line">
+                <span id="blog4">#Java</span>
+                <span>#MVC</span>
+                <span>#Design pattern</span>
+              </div>
+
+              <p class="third-line">Oct 20 . 7m watch time</p>
             </div>
 
-            <p class="third-line">Oct 20 . 7m watch time</p>
             <div class="video-container">
-              <video src="videos/Blog4.mp4" controls width="350" aria-label="Stop using if Statements in java"></video>
+              <video
+                src="videos/Blog4.mp4"
+                controls
+                width="350"
+                aria-label="Stop using if Statements in java"
+              ></video>
             </div>
 
             <div class="bottom-line">
@@ -216,19 +256,24 @@
           </article>
 
           <article class="blog javaScript">
-            <h3>
-              Session vs Token Authentication in 100 Seconds
-            </h3>
-            <div class="second-line">
-              <span>#BackEnd</span>
-              <span id="blog5">#javaScript</span>
-              <span>#Node.js</span>
-              <span>+1</span>
-            </div>
+            <div class="text-content">
+              <h3>Session vs Token Authentication in 100 Seconds</h3>
+              <div class="second-line">
+                <span>#BackEnd</span>
+                <span id="blog5">#javaScript</span>
+                <span>#Node.js</span>
+                <span>+1</span>
+              </div>
 
-            <p class="third-line">Oct 14 . 9m watch time</p>
+              <p class="third-line">Oct 14 . 9m watch time</p>
+            </div>
             <div class="video-container">
-              <video src="videos/Blog5.mp4" controls width="350" class="Implementing SS and CS using Node.js"></video>
+              <video
+                src="videos/Blog5.mp4"
+                controls
+                width="350"
+                class="Implementing SS and CS using Node.js"
+              ></video>
             </div>
 
             <div class="bottom-line">
@@ -254,16 +299,24 @@
           </article>
 
           <article class="blog javaScript">
-            <h3>JavaScript best practices</h3>
-            <div class="second-line">
-              <span id="blog6">#Web Dev</span>
-              <span>#Mobile Dev</span>
-              <span>+1</span>
+            <div class="text-content">
+              <h3>JavaScript best practices</h3>
+              <div class="second-line">
+                <span id="blog6">#Web Dev</span>
+                <span>#Mobile Dev</span>
+                <span>+1</span>
+              </div>
+
+              <p class="third-line">Oct 14 . 9m watch time</p>
             </div>
 
-            <p class="third-line">Oct 14 . 9m watch time</p>
             <div class="video-container">
-              <video src="videos/Blog6.mp4" controls width="350" aria-label="JavaScript best practices"></video>
+              <video
+                src="videos/Blog6.mp4"
+                controls
+                width="350"
+                aria-label="JavaScript best practices"
+              ></video>
             </div>
 
             <div class="bottom-line">
@@ -296,21 +349,31 @@
       <div class="footer-grid">
         <div class="main container">
           <div class="grid">
-            <img src="images/Logo.png" alt="Portfolio Logo">
+            <img src="images/Logo.png" alt="Portfolio Logo" />
             <p>Crafting Your Digital Presence with Precision</p>
             <div class="icons">
-              <a href="https://t.me/AbEl_FX" aria-label="telegram" target="_blank"
+              <a
+                href="https://t.me/AbEl_FX"
+                aria-label="telegram"
+                target="_blank"
                 ><i class="fab fa-telegram"></i
               ></a>
-              <a href="https://github.com/abelfx" aria-label="github" target="_blank"
+              <a
+                href="https://github.com/abelfx"
+                aria-label="github"
+                target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href="https://x.com/ET_AbElA" aria-label="twitter" target="_blank"
+              <a
+                href="https://x.com/ET_AbElA"
+                aria-label="twitter"
+                target="_blank"
                 ><i class="fab fa-twitter"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/abel-tesfa-9b1617249/"
-                aria-label="Linkedin" target="_blank"
+                aria-label="Linkedin"
+                target="_blank"
                 ><i class="fab fa-linkedin"></i
               ></a>
             </div>
@@ -345,4 +408,6 @@
       </div>
     </footer>
   </body>
+  <script src="./js/navigationControl.js"></script>
+  <script src="./js/blogHandler.js"></script>
 </html>
