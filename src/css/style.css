@@ -443,7 +443,7 @@ h3 {
 
   /* Intro part */
   .intro {
-    background: url("/src/images/ProfilePic.png") no-repeat center center;
+    background: url("../images/ProfilePic.png") no-repeat center center;
     background-size: cover;
     position: relative;
     color: white;
