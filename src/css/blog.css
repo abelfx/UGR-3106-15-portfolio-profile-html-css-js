@@ -57,6 +57,10 @@ body {
   color: rgb(206, 201, 248);
 }
 
+.search-bar #searchIcon:hover {
+  cursor: pointer;
+}
+
 .new-post {
   color: white;
   padding: 8px 20px;
